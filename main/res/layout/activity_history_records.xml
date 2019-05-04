@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/searchWords_fatherLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffefd5"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cn.eoe.app.ui.HistoryRecordsActivity">
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <SearchView
+        android:id="@+id/Records_searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="请输入要查询的单词..."
+         />
+        <TextView
+            android:id="@+id/text_history_records"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="历史记录"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/history_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignTop="@+id/bt_empty_history"
+        android:layout_below="@+id/search_layout"
+        tools:ignore="NotSibling">
+
+    </ListView>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+       >
+
+        <Button
+            android:id="@+id/bt_empty_history"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#ffefd5"
+
+            android:text="清空历史记录"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+           />
+
+    </RelativeLayout>
+
+</RelativeLayout>

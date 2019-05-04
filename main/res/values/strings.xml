@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">知道词典</string>
+    <string name="psE">英[%1$s]</string>
+    <string name="psA">美[%1$s]</string>                     <!---%1$s表示第一个替换位置是以字符串类型放入-->
+    <string name="posAcceptation">基本释义:</string>
+    <string name="sent">经典例句:</string>
+    <string name="pos">canskjfnsdnksdhviksaml</string>
+    <drawable name="color1">#000000</drawable>
+    <drawable name="color2">#ffefd5</drawable>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

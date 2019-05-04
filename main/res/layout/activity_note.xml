@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffefd5"
+    tools:context="com.example.dictionary13.cn.eoe.app.ui.NoteActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+
+        android:id="@+id/butt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageButton
+
+            android:id="@+id/bt_initial"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#ffefd5"
+            android:src="@drawable/words_order"
+            android:scaleType="fitStart"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/butt"
+        tools:ignore="NotSibling">
+
+    </ListView>
+
+    <LinearLayout
+         android:id="@+id/delete_linearLayout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_alignParentBottom="true"
+         android:background="#deb887"
+         android:visibility="gone"
+         >
+
+         <Button
+             android:id="@+id/bt_cancel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="#deb887"
+             android:text="取消选择   |"
+             />
+         <TextView
+             android:id="@+id/tv_sum"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="共计"
+             android:textColor="@color/black"/>
+         <Button
+             android:id="@+id/bt_delete"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="|      删除"
+             android:background="#deb887"
+
+             />
+ </LinearLayout>
+
+</LinearLayout>
